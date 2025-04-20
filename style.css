@@ -1,4 +1,8 @@
 .cercle{
+
+    backdrop-filter: blur(1);
+
+    border: none;
     background-color: white;
     /* background-color: black; */
     /* backdrop-filter: invert(1) ; */
@@ -7,10 +11,22 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    mix-blend-mode: difference
+    mix-blend-mode: difference;
+    /* opacity: 0.5; */
+    transition: transform 0.3s ease-in-out;
+    /* &:hover { */
+        /* transform: scale(1.5); */
+    /* } */
+
     
 
 }
+
+.scale{
+    transform: scale(1.9);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 *{
     cursor: none;
@@ -33,6 +49,7 @@ body{
 }
 
 p{
+    font-family: ui-monospace;
     font-size: 32px;
     color: #000000;
     text-align: center;
