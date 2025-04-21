@@ -28,10 +28,11 @@ function animate() {
     
     
     
- 
-    cercle.x += (x - cercle.x) * 0.3;
+    // const delay1=0.3*(1-index*2/cercle.length);
+    let delay1=0.3;
+    cercle.x += (x - cercle.x) * delay1;
 
-    cercle.y += (y - cercle.y) * 0.3;
+    cercle.y += (y - cercle.y) * delay1;
 
     const dx = index/cercles.length
 
